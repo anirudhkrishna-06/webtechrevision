@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anirudh Krishna | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AK</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Anirudh Krishna</h1>
+            <p>Full Stack Developer • AI Engineer • Problem Solver</p>
+            <a href="#projects" class="btn hero-btn">View Portfolio</a>
+
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="chip-container">
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">OOP</span>
+            <span class="chip">React</span>
+            <span class="chip">Flask</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">LLMs</span>
+            <span class="chip">RAG</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">AWS</span>
+            <span class="chip">GCP</span>
+            <span class="chip">Git</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">GraphQL</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Unit Testing</span>
+        </div>
+
+        <div class="skill-details">
+            <ul>
+                <li><strong>Frontend:</strong> React, TypeScript, responsive UI, accessibility best practices.</li>
+                <li><strong>Backend:</strong> Node.js, Express, Flask, FastAPI, REST/GraphQL APIs, authentication.</li>
+                <li><strong>Data & ML:</strong> Python ML stack (NumPy, Pandas, scikit-learn), deep learning with TensorFlow/PyTorch, LLM integrations and RAG pipelines.</li>
+                <li><strong>DevOps & Cloud:</strong> Docker, Kubernetes, CI/CD pipelines, deployments on AWS/GCP.</li>
+                <li><strong>Databases & Tools:</strong> MongoDB, MySQL, Git, testing frameworks and debugging tools.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>CALCMATE</h3>
+                <img src="project-image.jpeg" alt="Project thumbnail" class="project-img">
+                <p class="project-desc">Overview: CALCMATE is an LLM-driven assistant that understands natural-language math word problems and produces step-by-step solutions by combining retrieval-augmented generation (RAG) with symbolic computation.
+                Features: Problem parsing, context retrieval from curated math corpus, symbolic verification of results, and explanation generation.
+                
+                Tech: Python, LangChain, OpenAI/LLM backend, SymPy for symbolic math, MongoDB for vector store.
+                
+                Role / Status: Designed and implemented the RAG pipeline and symbolic verifier; prototype tested on school-level problem sets.</p>
+                <a href="#home" class="btn small-btn">View More</a>
+
+            </div>
+
+            <div class="card">
+                <h3>Context-Aware File Explorer</h3>
+                <img src="project-image.jpeg" alt="Project thumbnail" class="project-img">
+
+                <p class="project-desc">Overview: A smart file-explorer that predicts which files a user will need based on active applications, recent edits, and calendar context.
+                Features: Real-time context sensing, relevance ranking, quick-preview, and adaptive shortcuts.
+                
+                Tech: Electron, Node.js, NLP models for intent detection, local embedding store, and native OS integrations.
+                
+                Role / Status: Built the prediction model and local embedding pipeline; integrated frontend preview and OS hooks.</p>
+                <a href="#home" class="btn small-btn">View More</a>
+
+            </div>
+
+            <div class="card">
+                <h3>Routivity</h3>
+                <img src="project-image.jpeg" alt="Project thumbnail" class="project-img">
+
+                <p class="project-desc">Overview: Routivity is an AI travel-planning assistant that creates personalized multi-day itineraries based on user preferences, constraints and travel time optimization.
+                Features: Preference elicitation, schedule optimization, POI recommendations, and exportable itineraries.
+                
+                Tech: React frontend, Flask/FastAPI backend, Google Maps APIs, itinerary optimization algorithms.
+                
+                Role / Status: Led frontend and API integration; implemented itinerary optimization heuristics and user preference model.</p>
+                <a href="#home" class="btn small-btn">View More</a>
+
+            </div>
+
+            <div class="card">
+                <h3>AI Network Troubleshooting</h3>
+                <img src="project-image.jpeg" alt="Project thumbnail" class="project-img">
+
+                <p class="project-desc">Overview: A research project to predict network faults and congestion using ML models trained on Mininet-generated traffic traces.
+                Features: Anomaly detection, root-cause suggestion, and synthetic scenario generation for training.
+                
+                Tech: Mininet, Python, scikit-learn, TensorFlow, data visualization tools.
+                
+                Role / Status: Collected simulation datasets, trained baseline models, and evaluated detection accuracy under varied conditions.</p>
+                <a href="#home" class="btn small-btn">View More</a>
+
+            </div>
+
+            <div class="card">
+                <h3>Mood-Based Food Recommender</h3>
+                <img src="project-image.jpeg" alt="Project thumbnail" class="project-img">
+
+                <p class="project-desc">Overview: A recommender that suggests meals and recipes based on a user's mood, dietary preferences, and available ingredients.
+                Features: Mood classification, dietary filters, ingredient-based substitution, and recipe scoring.
+                
+                Tech: Python backend, basic CNN/RNN mood classifier, recipe database, and simple web UI.
+                
+                Role / Status: Implemented the recommendation logic and mood-to-recipe mapping; validated with user-study feedback.</p>
+                <a href="#home" class="btn small-btn">View More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form class="contact-form"
+            action="https://formspree.io/f/xvzokaad"
+            method="POST">
+
+            <input type="text"
+                class="input"
+                name="name"
+                placeholder="Name"
+                required>
+
+            <input type="email"
+                class="input"
+                name="email"
+                placeholder="Email"
+                required>
+
+            <input type="text"
+                class="input"
+                name="phone"
+                placeholder="Phone">
+
+            <textarea class="input textarea"
+                    name="message"
+                    placeholder="Message"></textarea>
+
+            <button class="btn" type="submit">Send</button>
+        </form>
+
+    </section>
+
+
+    <footer class="footer">
+        <p>© 2025 Anirudh Krishna</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

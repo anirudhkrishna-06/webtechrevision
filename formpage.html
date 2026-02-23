@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>
+		Form Testing Page		
+	</title>
+</head>
+<body>
+	<div class="page">
+		<main class="container">
+			<div class="form-container">
+				<h2>Form Tester</h2>
+				<form id="bookingform">
+					<div class="formgroup">
+						<label for="nameIn"> Full Name </label>
+						<input type="text" id="nameIn" placeholder="SampleName">
+						<small class="error" id="nameError"></small>
+					</div>
+					<div class="formgroup">
+ 						<label for="emailIn"> Email </label>
+ 						<input type="text" id="emailIn" placeholder="Sample@domain.com">
+ 						<small class="error" id="emailError"></small>
+ 					</div>
+					<button type="submit" class="submit">Submit</button>
+				</form>	
+				<div id="successMsg" class="sucessmessage"></div>						
+
+			</div>		
+
+		</main>	
+
+	</div>
+	<script>
+		const bookingform = document.getElementById('bookingform');
+		const nameInput = document.getElementById('nameIn');
+		const emailInput = document.getElementById('emailIn');
+		const successMsg = document.getElementById('successMsg'); 
+
+		bookingform.addEventListener('submit', function(event){
+			event.preventDefault();
+			const errorElements = document.querySelectorAll('.error');
+			errorElements.forEach(el => el.textContent = '');
+			successMsg.textContent = '';
+			successMsg.style.display = 'none';
+			const name = nameInput.value.trim();
+			const email = emailInput.value.trim();
+			let isValid = true;
+			if (name === '' || !/^[A-Za-z\s]{2,}$/.test(name)) {
+				document.getElementById('nameError').textContent = "Enter Valid Name";
+				isValid = false;
+			}
+			if (!/^[^\s@]+@[^\s]+\.[^\s@]+$/.test(email)){
+				document.getElementById('emailError').textContent = "Enter Valid Email";
+				isValid = false;
+			}
+			if (isValid) {
+ 			successMsg.textContent = `Booking Successful! Confirmation sent to ${email}`;
+ 			successMsg.style.display = 'block';
+ 
+ 			}
+		});
+
+	</script>
+	
+</body>
+
+
+</html>
